@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>StickerBridge</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f7f7f8;
+            color: #111;
+        }
+
+        nav {
+            height: 70px;
+            background: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 8%;
+            border-bottom: 1px solid #eee;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 800;
+        }
+
+        .login {
+            background: #111;
+            color: white;
+            border: none;
+            padding: 11px 20px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .hero {
+            min-height: calc(100vh - 70px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .hero-content {
+            max-width: 750px;
+        }
+
+        .badge {
+            display: inline-block;
+            background: #e9e9ff;
+            color: #5b4bdb;
+            padding: 8px 14px;
+            border-radius: 50px;
+            font-size: 14px;
+            font-weight: 700;
+            margin-bottom: 25px;
+        }
+
+        h1 {
+            font-size: 64px;
+            line-height: 1.05;
+            margin-bottom: 20px;
+        }
+
+        h1 span {
+            color: #5b4bdb;
+        }
+
+        .description {
+            font-size: 20px;
+            line-height: 1.6;
+            color: #666;
+            margin-bottom: 35px;
+        }
+
+        .start {
+            background: #5b4bdb;
+            color: white;
+            border: none;
+            padding: 16px 32px;
+            border-radius: 12px;
+            font-size: 17px;
+            font-weight: 700;
+            cursor: pointer;
+        }
+
+        .start:hover {
+            opacity: 0.9;
+        }
+
+        .features {
+            display: flex;
+            justify-content: center;
+            gap: 35px;
+            margin-top: 55px;
+            color: #555;
+        }
+
+        .feature {
+            font-size: 15px;
+        }
+
+        @media (max-width: 600px) {
+
+            nav {
+                padding: 0 20px;
+            }
+
+            h1 {
+                font-size: 44px;
+            }
+
+            .description {
+                font-size: 17px;
+            }
+
+            .features {
+                flex-direction: column;
+                gap: 12px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">StickerBridge</div>
+
+        <button class="login">
+            Accedi
+        </button>
+    </nav>
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <div class="badge">
+                TikTok → WhatsApp
+            </div>
+
+            <h1>
+                I tuoi sticker.<br>
+                <span>Ovunque.</span>
+            </h1>
+
+            <p class="description">
+                Porta facilmente i tuoi sticker TikTok su WhatsApp.
+                Salvali, organizzali e trasferiscili in pochi secondi.
+            </p>
+
+            <button class="start" onclick="window.location.href='register.html'">
+    Inizia ora →
+</button>
+
+            <div class="features">
+
+                <div class="feature">
+                    ✓ Facile da usare
+                </div>
+
+                <div class="feature">
+                    ✓ Nessuna installazione
+                </div>
+
+                <div class="feature">
+                    ✓ TikTok → WhatsApp
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</body>
+</html>

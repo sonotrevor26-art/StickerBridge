@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Crea account - StickerBridge</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f7f7f8;
+            color: #111;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 430px;
+        }
+
+        .logo {
+            text-align: center;
+            font-size: 25px;
+            font-weight: 800;
+            margin-bottom: 35px;
+        }
+
+        .card {
+            background: white;
+            padding: 35px;
+            border-radius: 20px;
+            box-shadow: 0 10px 35px rgba(0, 0, 0, 0.06);
+        }
+
+        h1 {
+            font-size: 28px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #777;
+            line-height: 1.5;
+            margin-bottom: 30px;
+        }
+
+        .tiktok {
+            width: 100%;
+            border: none;
+            background: #111;
+            color: white;
+            padding: 15px;
+            border-radius: 11px;
+            font-size: 16px;
+            font-weight: 700;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+
+        .divider {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: #aaa;
+            font-size: 13px;
+            margin: 20px 0;
+        }
+
+        .divider::before,
+        .divider::after {
+            content: "";
+            height: 1px;
+            background: #ddd;
+            flex: 1;
+        }
+
+        label {
+            display: block;
+            font-size: 14px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        input {
+            width: 100%;
+            padding: 14px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            font-size: 15px;
+            margin-bottom: 16px;
+            outline: none;
+        }
+
+        input:focus {
+            border-color: #5b4bdb;
+        }
+
+        .create {
+            width: 100%;
+            border: none;
+            background: #5b4bdb;
+            color: white;
+            padding: 15px;
+            border-radius: 11px;
+            font-size: 16px;
+            font-weight: 700;
+            cursor: pointer;
+        }
+
+        .back {
+            display: block;
+            text-align: center;
+            margin-top: 22px;
+            color: #666;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .terms {
+            text-align: center;
+            color: #999;
+            font-size: 12px;
+            line-height: 1.5;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="logo">
+            StickerBridge
+        </div>
+
+        <div class="card">
+
+            <h1>Crea il tuo account</h1>
+
+            <p class="subtitle">
+                Salva e trasferisci i tuoi sticker
+                da TikTok a WhatsApp.
+            </p>
+
+            <button class="tiktok" onclick="collegaTikTok()">
+                🎵 Continua con TikTok
+            </button>
+
+            <div class="divider">
+                oppure
+            </div>
+
+            <label>Email</label>
+            <input type="email" placeholder="La tua email">
+
+            <label>Password</label>
+            <input type="password" placeholder="Crea una password">
+
+            <button class="create" onclick="creaAccount()">
+                Crea account
+            </button>
+
+            <a href="index.html" class="back">
+                ← Torna alla home
+            </a>
+
+            <p class="terms">
+                Continuando accetti i Termini di servizio
+                e la Privacy Policy.
+            </p>
+
+        </div>
+
+    </div>
+
+    <script>
+
+        function collegaTikTok() {
+            alert("Il collegamento ufficiale con TikTok verrà configurato nel prossimo passaggio.");
+        }
+
+        function creaAccount() {
+            alert("La registrazione verrà collegata al database nel prossimo passaggio.");
+        }
+
+    </script>
+
+</body>
+</html>
